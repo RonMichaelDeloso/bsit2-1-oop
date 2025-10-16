@@ -1,4 +1,15 @@
-package PACKAGE_NAME;
+public class Bird extends Pet implements Trainable{
+    public Bird(String name, int age){
+        super(name, age);
+    }
 
-public class Bird {
+    @Override
+    public void makeSound(){
+        System.out.println(name + " says: Tweet! Tweet!");
+    }
+
+    @Override
+    public void performTrick(){
+        System.out.println("Training " + name + " : Flies in circles and lands on perch");
+    }
 }

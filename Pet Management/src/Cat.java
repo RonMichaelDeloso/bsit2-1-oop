@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Cat extends Pet{
+    public Cat(String name, int age){
+        super(name, age);
+    }
 
-public class Cat {
+    @Override
+    public void makeSound(){
+        System.out.println(name + " says: Meow! Meow!");
+    }
+
 }
+
